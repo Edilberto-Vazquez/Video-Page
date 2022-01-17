@@ -11,7 +11,7 @@ const App = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
-        <Route exact path="/Video-Page/" component={Home} />
+        <Route exact path="/Video-Page" component={Home} />
         <Route exact path="/Video-Page/login" component={Login} />
         <Route exact path="/Video-Page/register" component={Register} />
         <Route exact path="/Video-Page/player/:id" component={Player} />
