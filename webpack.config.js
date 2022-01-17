@@ -9,6 +9,7 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/",
   },
+  mode: "development",
   resolve: {
     extensions: [".js", ".jsx", ".png"],
   },
@@ -45,6 +46,11 @@ module.exports = {
     ],
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
+    port: 3000,
     historyApiFallback: true,
   },
   plugins: [
