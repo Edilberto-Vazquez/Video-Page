@@ -48,7 +48,7 @@ const Register = (props) => {
             />
             <button className="button">Registrarme</button>
           </form>
-          <Link to="/login">Iniciar sesón</Link>
+          <Link to="/Video-Page/login">Iniciar sesón</Link>
         </section>
       </section>
     </>

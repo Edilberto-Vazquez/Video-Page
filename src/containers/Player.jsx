@@ -28,7 +28,7 @@ const Player = (props) => {
       </div>
     </div>
   ) : (
-    <Redirect to="/404/" />
+    <Redirect to="/Video-Page/404/" />
   );
 };
 

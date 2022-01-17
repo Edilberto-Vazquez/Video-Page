@@ -17,7 +17,7 @@ const Login = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.loginRequest(form);
-    props.history.push("/");
+    props.history.push("/Video-Page/");
     console.log(form);
   };
 
@@ -60,7 +60,8 @@ const Login = (props) => {
             </div>
           </section>
           <p className="login__container--register">
-            No tienes ninguna cuenta <Link to="/register">Regístrate</Link>
+            No tienes ninguna cuenta{" "}
+            <Link to="/Video-Page/register">Regístrate</Link>
           </p>
         </section>
       </section>

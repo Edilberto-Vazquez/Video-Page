@@ -27,7 +27,7 @@ const Header = (props) => {
   const login = "Iniciar Sesión";
   return (
     <header className={headerClass}>
-      <Link to="/">
+      <Link to="/Video-Page/">
         <img className="header__img" src={logo} alt="Platzi Video" />
       </Link>
       <div className="header__menu">
@@ -47,7 +47,7 @@ const Header = (props) => {
           {hasUser ? (
             <>
               <li>
-                <Link to="/cuenta">{user.name}</Link>
+                <Link to="/Video-Page/cuenta">{user.name}</Link>
               </li>
               <li>
                 <Link to="#logout" onClick={handleLogout}>
@@ -57,7 +57,7 @@ const Header = (props) => {
             </>
           ) : (
             <li>
-              <Link to="/login">{login}</Link>
+              <Link to="/Video-Page/login">{login}</Link>
             </li>
           )}
         </ul>
