@@ -27,7 +27,7 @@ const Header = (props) => {
   const login = "Iniciar Sesión";
   return (
     <header className={headerClass}>
-      <Link to="/Video-Page/">
+      <Link to="/Video-Page">
         <img className="header__img" src={logo} alt="Platzi Video" />
       </Link>
       <div className="header__menu">

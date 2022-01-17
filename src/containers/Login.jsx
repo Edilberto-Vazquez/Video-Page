@@ -17,7 +17,7 @@ const Login = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.loginRequest(form);
-    props.history.push("/Video-Page/");
+    props.history.push("/Video-Page");
     console.log(form);
   };
 

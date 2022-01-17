@@ -14,7 +14,7 @@ deploy:
   skip_cleanup: true
   keep_histoyry: true
   github-token: $GITHUB_TOKEN
-  local_dir: dist/
+  local_dir: dist
   target_branch: gh-pages
   commit_message: "Deplot Release"
   on:
