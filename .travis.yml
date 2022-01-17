@@ -1,16 +1,21 @@
 language: node_js
-node_js:
-  - "stable"
 cache:
   directories:
-    - node_modules
+    - ~/.npm
+node_js:
+  - "14"
+git:
+  depth: 3
 script:
-  - npm run build
+  - yarn build
 deploy:
   provider: pages
+  edge: true
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
-  commit_message: "Deploy"
+  keep_histoyry: true
+  github-token: $GITHUB_TOKEN
+  local_dir: dist/
+  target_branch: gh-pages
+  commit_message: "Deplot Release"
   on:
     branch: main

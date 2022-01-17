@@ -11,7 +11,7 @@ module.exports = {
   },
   mode: "development",
   resolve: {
-    extensions: [".js", ".jsx", ".png"],
+    extensions: [".js", ".jsx"],
   },
   module: {
     rules: [
@@ -45,14 +45,6 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "public"),
-    },
-    compress: true,
-    port: 3000,
-    historyApiFallback: true,
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
@@ -62,4 +54,12 @@ module.exports = {
       filename: "assets/[name].css",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "public"),
+    },
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,
+  },
 };
